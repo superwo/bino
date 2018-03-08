@@ -44,8 +44,33 @@ body
 
 a:link, a:visited
 	text-decoration: none
-
+ul, li
+	margin: 0
+	padding: 0
+	list-style: none
 // utility classes
+
+.delimiter
+	border: none
+	+size(7px)
+	background-color: $color-accent
+	border-radius: 50%
+	margin: 0 auto
+	position: relative
+	overflow: visible
+	&::before, &::after
+		z-index: 10
+		content: ''
+		position: absolute
+		right: 22px
+		top: 3px
+		width: 8rem
+		height: 1px
+		background-color: rgba(#f1ebe7, .5)
+	&::after
+		right: auto
+		left: 22px
+
 .img-responsive
 	display: block
 	max-width: 100%

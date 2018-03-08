@@ -2,12 +2,17 @@
   display: inline-block
   vertical-align: middle
   text-align: center
-  padding: 1rem 2rem
-  font: normal 14px/14px Arial, sans-serif
+  text-transform: uppercase
+  color: #fff
+  padding: 1rem 0
+  font-family: 'opens-semibold', sans-serif
+  font-size: 1.2rem
+  letter-spacing: 0.14px
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25)
   transition: all .2s
-  border-radius: 5px
-  background: transparent
-  border: none
+  border-radius: 2px
+  background-color: $color-accent
+  border: 1px solid $color-accent
   cursor: pointer
   backface-visibility:hidden
 
@@ -19,7 +24,12 @@
     transform: translateY(-1px)
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2)
 
-a.btn--bordered
-  border: 1px solid #ccc
+  &--big
+    padding: 1.3rem 0
+    width: 22.5rem
+  &--transparent
+    background-color: transparent
+    border-color: currentColor
+
 input[type="submit"].btn, button.btn
   padding-top: 0

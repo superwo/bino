@@ -1,0 +1,77 @@
+.mainheader
+  min-height: 80rem
+  height: 95vh
+  background-image: linear-gradient(rgba(#000, .7), rgba(#000, .7)), url(../img/header.jpg)
+  background-size: cover
+  position: relative
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 50% 98%, 0 88%)
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &__more
+    display: flex
+    position: absolute
+    bottom: -3.2rem
+    left: 50%
+    transform: translateX(-50%)
+    +size(7.3rem)
+    background-color: $color-white
+    background-clip: padding-box
+    border-radius: 50%
+    text-align: center
+    line-height: 6rem
+    border: 6px solid rgba(#fff, .25)
+    padding: 1.2rem
+    z-index: 100
+    svg
+      fill: $color-accent
+
+.top-line
+  position: absolute
+  top: 4rem
+  left: 50%
+  transform: translateX(-50%)
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.top-nav
+  &__item
+    display: inline-block
+    &:not(:last-child)
+      margin-right: 3rem
+  &__link
+    font-family: "opens", sans-serif
+    display: block
+    padding: 2rem 0
+    text-transform: uppercase
+    color: $color-white
+    transition: all 200ms ease
+    border-bottom: 1px solid transparent
+    &:hover, &:focus
+      color: $color-accent
+      border-color: $color-accent
+
+.banner
+  text-align: center
+  margin-top: 5rem
+
+  &__subtitle
+    font-size: 2.4rem
+    color: $color-white
+    letter-spacing: 1.2px
+    display: block
+    margin: 0 auto
+
+  &__text
+    max-width: 58rem
+    margin: 3.5rem auto 0
+    color: #cbc6c0
+    font-family: 'opens', sans-serif
+
+  &__buttons
+    margin-top: 6.3rem
+    & > :first-child
+      margin-right: 3rem

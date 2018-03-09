@@ -176,7 +176,7 @@ gulp.task('spritemade', function() {
         }));
 
     spriteData.img.pipe(gulp.dest('app/img/sprite/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('app/sass/')); // путь, куда сохраняем стили
+    spriteData.css.pipe(gulp.dest('blocks/sass-base/')); // путь, куда сохраняем стили
 });
 
 gulp.task('sprite', ['cleansprite', 'spritemade']);

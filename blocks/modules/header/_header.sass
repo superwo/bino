@@ -9,23 +9,7 @@
   align-items: center
   justify-content: center
 
-  &__more
-    display: flex
-    position: absolute
-    bottom: -3.2rem
-    left: 50%
-    transform: translateX(-50%)
-    +size(7.3rem)
-    background-color: $color-white
-    background-clip: padding-box
-    border-radius: 50%
-    text-align: center
-    line-height: 6rem
-    border: 6px solid rgba(#fff, .25)
-    padding: 1.2rem
-    z-index: 100
-    svg
-      fill: $color-accent
+
 
 .top-line
   position: absolute
@@ -75,3 +59,101 @@
     margin-top: 6.3rem
     & > :first-child
       margin-right: 3rem
+
+.why
+  position: relative
+.why-box
+  text-align: center
+  margin-bottom: 4rem
+  &:hover
+    .why-box__icon
+      border-color: $color-accent
+      transform: rotateZ(45deg)
+      > i
+        transform: rotateZ(-45deg)
+
+    .why-box__title
+      color: $color-accent
+
+  &__icon
+    +size(7.2rem)
+    border: 1px solid rgba($color-text,.25)
+    border-radius: 2px
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: all 300ms ease-in-out
+    margin: 0 auto 2rem
+    backface-visibility: hidden
+    > i
+      transition: all 300ms ease-in-out
+      backface-visibility: hidden
+      display: block
+  &__icon-1
+    +sprite($s-1)
+  &__icon-2
+    +sprite($s-2)
+  &__icon-3
+    +sprite($s-3)
+  &__icon-4
+    +sprite($s-4)
+
+  &__title
+    color: #6a6a6a
+    font-family: 'opens-bold', sans-serif
+    text-transform: uppercase
+    letter-spacing: 1.35px
+    font-size: 1.8rem
+    position: relative
+    padding-bottom: .8rem
+    margin-bottom: 1rem
+    display: block
+    transition: all 300ms ease-in-out
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 4.1rem
+      height: 2px
+      background-color: rgba(#6a6a6a, .5)
+
+  &__text
+    font-size: 1.2rem
+    letter-spacing: 0.9px
+    line-height: 2rem
+
+.more
+  display: flex
+  position: absolute
+  top: -5rem
+  left: 50%
+  transform: translateX(-50%)
+  +size(7.3rem)
+  background-color: $color-white
+  background-clip: padding-box
+  border-radius: 50%
+  text-align: center
+  line-height: 6rem
+  border: 6px solid rgba(#fff, .25)
+  padding: 1.2rem
+  z-index: 100
+  backface-visibility: hidden
+  &:hover
+    animation-name: pulse
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-timing-function: ease-in-out
+  svg
+    backface-visibility: hidden
+    fill: $color-accent
+
+@keyframes pulse
+  0%
+    transform: translateX(-50%) scale(1)
+  50%
+    transform: translateX(-50%) scale(1.2)
+  100%
+    transform: translateX(-50%) scale(1)

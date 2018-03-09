@@ -30,5 +30,18 @@ header.mainheader
       a(href="#").btn.btn--big GET STARTED NOW
       a(href="#").btn.btn--big.btn--transparent Learn More
 
-  a(href="#").mainheader__more
+
+      
+section.why
+  a(href="#").more
     +icon('anchor')
+  .container
+    .row
+      each val, index in {1:'Sleek Design', 2:'CLEAN CODE', 3:'CREATIVE IDEAS', 4:'FREE SUPPORT'}
+        .col-md-3.col-xs-6
+          .why-box
+            .why-box__icon
+              i(class="why-box__icon-" + index)
+            span.why-box__title= val
+            p.why-box__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.
+        

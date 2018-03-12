@@ -1,10 +1,10 @@
 extends ../layouts/main_layout.pug
 
 block title
-  title Main Page
+  title Bino
 
 prepend content
-  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium repudiandae, debitis harum veniam rerum eligendi beatae veritatis odio dolorem i deleniti qui, voluptatibus porro magnam unde quod! Architecto, official.
+  include ../modules/about/about.pug
   +icon('home', 'red_mod')
   
   a.btn.btn--bordered(href="#") Click Me

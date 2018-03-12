@@ -14,10 +14,24 @@ body
 	margin: 2.5rem auto 4.5rem
 
 .secondary-title
+	position: relative
 	font-family: "sanspro", sans-serif
 	font-weight: 700
 	text-transform: uppercase
+	margin: 0 0 4rem
+	line-height: 1.1
 	color: #6a6a6a
 	font-size: 3.6rem
 	text-transform: uppercase
 	letter-spacing: 3.6px
+
+	&__left
+		padding-left: 3.4rem
+		&::before
+			content: ''
+			position: absolute
+			width: 6px
+			height: 36px
+			background-color: $color-accent
+			top: 2px
+			left: 0

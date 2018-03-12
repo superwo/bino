@@ -1,0 +1,14 @@
+section.section-services
+  .container
+    .row
+      .col-md-7
+        h2.secondary-title.secondary-title--right.secondary-title--white Our Services
+        ul.services
+          each val, index in {'nonitor': 'Web Design', 'layers': 'Print Design', 'photo': 'PHotography'}
+            li.services__item
+              .services__text
+                span.services__title= val
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.
+              .services__button
+                span.circle-btn
+                  +icon(index)

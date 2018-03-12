@@ -25,7 +25,7 @@ body
 	text-transform: uppercase
 	letter-spacing: 3.6px
 
-	&__left
+	&--left
 		padding-left: 3.4rem
 		&::before
 			content: ''
@@ -35,3 +35,15 @@ body
 			background-color: $color-accent
 			top: 2px
 			left: 0
+	&--right
+		padding-right: 3.4rem
+		&::after
+			content: ''
+			position: absolute
+			width: 6px
+			height: 36px
+			background-color: $color-accent
+			top: 2px
+			right: 0
+	&--white
+		color: $color-white

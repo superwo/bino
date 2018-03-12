@@ -1,0 +1,45 @@
+.section-services
+  background-color: #202020
+  position: relative
+  padding: 0
+  text-align: right
+
+  div[class^="col-"]
+    background-color: #202020
+    z-index: 10
+    padding-top: 15rem
+    padding-right: 8rem
+    padding-bottom: 10rem
+
+  &::after
+    position: absolute
+    content: ''
+    height: 100%
+    width: 50%
+    top: 0
+    left: 50%
+    background-image: url(../img/tablet.jpg)
+    background-size: cover
+
+.services
+  &__item
+    position: relative
+    margin-bottom: 4.4rem
+    &:hover
+      .circle-btn
+        animation-name: pulse
+        animation-duration: 1s
+        animation-iteration-count: infinite
+        animation-timing-function: ease-in-out
+  &__button
+    position: absolute
+    top: 1rem
+    right: -11.5rem
+  &__title
+    color: $color-accent
+    font-family: "opens-bold", sans-serif
+    font-size: 1.8rem
+    text-transform: uppercase
+  p
+    max-width: 56rem
+    margin-left: auto

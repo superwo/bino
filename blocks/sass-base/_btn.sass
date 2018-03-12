@@ -33,3 +33,49 @@
 
 input[type="submit"].btn, button.btn
   padding-top: 0
+
+.circle-btn
+  display: flex
+  +size(7.3rem)
+  background-color: $color-white
+  background-clip: padding-box
+  border-radius: 50%
+  text-align: center
+  line-height: 6rem
+  border: 6px solid rgba(#fff, .25)
+  padding: 1.2rem
+  z-index: 100
+  backface-visibility: hidden
+  &:hover
+    animation-name: pulse
+    animation-duration: 1s
+    animation-iteration-count: infinite
+    animation-timing-function: ease-in-out
+  svg
+    backface-visibility: hidden
+    fill: $color-accent
+
+  &--more
+    position: absolute
+    top: -5rem
+    left: 50%
+    transform: translateX(-50%)
+    &:hover
+      animation-name: pulse-more
+
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+  50%
+    transform: scale(1.2)
+  100%
+    transform: scale(1)
+
+@keyframes pulse-more
+  0%
+    transform: translateX(-50%) scale(1)
+  50%
+    transform: translateX(-50%) scale(1.2)
+  100%
+    transform: translateX(-50%) scale(1)

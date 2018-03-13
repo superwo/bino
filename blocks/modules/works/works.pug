@@ -1,0 +1,16 @@
+section.section-works
+  .container
+    h2.secondary-title Recent works
+    span.title-descr It has survived not only five centuries, but also the leap scrambled it to make a type.
+    hr.delimiter.delimiter--dark
+    ul.categories
+      each val in ['all', 'Print Design', 'animation', 'art', 'web design', 'Photography', 'video']
+        li.categories__item
+          -if(val == 'all')
+            a(href="#").categories__link.categories__link--active= val
+          -else
+            a(href="#").categories__link= val
+            
+          
+  .works
+    .works__item 1

@@ -1,0 +1,36 @@
+.section-works
+  > .container
+    text-align: center
+  .secondary-title
+    margin-bottom: 3rem
+
+  .title-descr
+    margin-bottom: 3rem
+    display: inline-block
+  .categories
+    margin-top: 6.8rem
+    margin-bottom: 5rem
+
+.categories
+  display: flex
+  justify-content: center
+  &__item
+    font-family: 'opens', sans-serif
+    text-transform: uppercase
+    position: relative
+  &__item:not(:last-child)
+    margin-right: 4rem
+    &::after
+      content: '/'
+      position: relative
+      left: 2rem
+  &__link
+    color: $color-text
+    transition: color 200ms ease
+    &:hover, &:focus, &--active
+      color: $color-accent
+
+.works
+  &__item
+    background-color: pink
+    width: 25%

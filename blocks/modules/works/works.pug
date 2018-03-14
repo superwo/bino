@@ -13,4 +13,11 @@ section.section-works
             
           
   .works
-    .works__item 1
+    -for(var i = 1; i<=8; i++)
+      .works__item
+        .works__item-inner
+        .works__item-content
+          img(src="img/works/work" + i +".jpg").works__img
+          a(href="#").works__text
+            span.works__title T-Shirt Design
+            span.works__cat art / t-shirt

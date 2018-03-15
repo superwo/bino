@@ -1,0 +1,72 @@
+.section-case
+  text-align: center
+  background-color: $color-white
+  .row
+    position: relative
+
+  .secondary-title
+    margin-bottom: 2.5rem
+
+.case
+  margin-top: 11rem
+  position: relative
+  z-index: 10
+  padding: 9.6rem 6rem 5rem
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
+  background-color: #ffffff
+
+  &__title
+    font-family: 'opens-bold', sans-serif
+    font-size: 1.8rem
+    text-transform: uppercase
+    color: #6a6a6a
+    position: relative
+    &::after
+      content: ''
+      display: block
+      margin: 1.8rem auto
+      +size(41px, 2px)
+      background-color: currentColor
+    span
+      letter-spacing: 1.35px
+
+  &__text
+    font-family: 'sanspro-light', sans-serif
+    letter-spacing: 1.05px
+
+  &__pag
+    display: flex
+    justify-content: center
+    margin-top: 5rem
+    a:not(:last-child)
+      margin-right: 8px
+    a
+      display: block
+      background-color: $color-white
+      +size(12px)
+      border-radius: 50%
+      &.active
+        background-color: $color-accent
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 6.5rem
+    transform: rotateZ(45deg)
+    +size(8.9rem)
+    background-color: $color-accent
+
+    i
+      display: block
+      transform: rotateZ(-45deg)
+      +sprite($s-bulb)
+
+.case__carousel-photos
+  position: absolute
+  top: 6rem
+  right: 0
+  width: 50%
+  img
+    width: 100%
+    height: auto

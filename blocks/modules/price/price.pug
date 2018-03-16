@@ -1,0 +1,17 @@
+section.section-price
+  .container
+    h2.secondary-title OUR PRICING
+    span.title-descr A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.
+    hr.delimiter.delimiter--dark
+      
+    .row
+      .col-md-4
+        .price-box
+          span.price-box__type Starter
+          .price-box__price
+            span $19
+            span per month
+          ul.price-box__info
+            each val in ['Competition Analysis Methods', 'All Ranked URLs', 'International Support System', 'Social Media Tracking']
+              li.price-box__info-item= val
+          a(href="#").btn.btn--medium.btn--gray Choose Plan

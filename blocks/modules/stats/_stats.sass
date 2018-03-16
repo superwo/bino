@@ -1,0 +1,44 @@
+.section-stats
+  background-image: linear-gradient(rgba(#000, .5)), url(../img/stats.jpg)
+  background-size: cover
+  padding: 15.5rem 0 14rem
+
+.stats
+  display: flex
+  justify-content: space-between
+  color: $color-white
+  text-align: center
+
+  &__nr
+    display: block
+    font-size: 3rem
+    font-weight: bold
+    letter-spacing: 1.5px
+  &__text
+    display: block
+    line-height: 1
+    letter-spacing: 0.9px
+    font-size: 1.8rem
+
+  &__icon
+    +size(11rem)
+    margin: 0 auto 3rem
+    border-radius: 50%
+    border: 1px solid #fff
+    background-color: transparent
+    color: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+      display: block
+    &-heart
+      +sprite($s-heart)
+    &-label
+      +sprite($s-label)
+    &-like
+      +sprite($s-like)
+    &-star
+      +sprite($s-star)
+    &-flag
+      +sprite($s-flag)

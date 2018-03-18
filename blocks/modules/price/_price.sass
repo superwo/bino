@@ -1,2 +1,74 @@
 .section-price
   text-align: center
+
+.price-container
+  display: flex
+  margin-top: 6.7rem
+
+.price-box
+  display: flex
+  flex: 1
+  position: relative
+  flex-direction: column
+  justify-content: space-between
+  background-color: $color-white
+  height: 61rem
+  padding: 0 0 5rem
+  &:hover, &:nth-child(2)
+    .price-box__type
+      background-color: $color-accent
+    .price-box__price
+      span:not(:last-child)
+        color: $color-accent
+    .btn
+      background-color: $color-accent
+      backface-visibility: hidden
+  &:hover
+    .btn
+      animation-name: pulse
+      animation-duration: 1s
+      animation-iteration-count: infinite
+      animation-timing-function: ease-in-out
+  &:not(:last-child)
+    margin-right: 1.5rem
+
+  &__type
+    height: 20.5rem
+    background-color: #999
+    color: #fff
+    font-family: 'opens-semibold', sans-serif
+    font-size: 2.4rem
+    text-transform: uppercase
+    letter-spacing: 1.8px
+    padding-top: 3.5rem
+    transition: all 200ms ease-in-out
+
+  &__price
+    +size(17.4rem)
+    display: flex
+    flex-direction: column
+    justify-content: center
+    background-color: #fff
+    background-clip: content-box
+    position: absolute
+    top: 12rem
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 50%
+    border: 1.3rem solid rgba($color-white, .25)
+    font-size: 1.3rem
+    line-height: 21.95px
+    span:not(:last-child)
+      font-size: 4rem
+      font-weight: bold
+      margin-bottom: 12px
+      transition: all 200ms ease-in-out
+
+  &__list
+    margin-bottom: 4.5rem
+
+  &__list-item:not(:last-child)
+    margin-bottom: 1rem
+
+  .btn
+    transition: all 200ms ease-in-out

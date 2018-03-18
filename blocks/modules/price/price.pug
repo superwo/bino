@@ -3,15 +3,17 @@ section.section-price
     h2.secondary-title OUR PRICING
     span.title-descr A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.
     hr.delimiter.delimiter--dark
-      
-    .row
-      .col-md-4
+
+    .price-container
+      each price, type in {'Starter': '$19', 'Premium': '$39', 'Business': '$99'}
         .price-box
-          span.price-box__type Starter
+          .price-box__type 
+            span= type
           .price-box__price
-            span $19
+            span= price
             span per month
-          ul.price-box__info
-            each val in ['Competition Analysis Methods', 'All Ranked URLs', 'International Support System', 'Social Media Tracking']
-              li.price-box__info-item= val
-          a(href="#").btn.btn--medium.btn--gray Choose Plan
+          .price-box__content
+            ul.price-box__list
+              each val in ['Competition Analysis Methods', 'All Ranked URLs', 'International Support System', 'Social Media Tracking']
+                li.price-box__list-item= val
+            a(href="#").btn.btn--medium.btn--gray Choose Plan

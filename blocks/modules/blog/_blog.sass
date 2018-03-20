@@ -1,0 +1,89 @@
+.section-blog
+  background-color: #f4f5f9
+  text-align: center
+  padding-bottom: 0
+
+.posts
+  display: flex
+  flex-wrap: wrap
+  margin-top: 7rem
+  &__item
+    width: 25%
+    position: relative
+    &-inner
+      padding-top: 100%
+    &-content
+      +coverdiv
+      // overflow: hidden
+
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+  &__more
+    color: #fff
+    font-size: 1.6rem
+    font-family: 'opens-semibold', sans-serif
+    font-style: italic
+    transition: all 200ms ease-in-out
+    transform: scale(0.8)
+    transform-origin: left
+    backface-visibility: hidden
+    &:hover
+      color: #fff
+      transform: scale(1)
+
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: left
+    transition: all 200ms ease-in-out
+    color: #fff
+    padding: 5rem
+    +coverdiv
+    background-color: $color-accent
+    &--left
+      &::before
+        content: ''
+        position: absolute
+        z-index: 20
+        transform: translateY(-50%)
+        top: 50%
+        left: -3rem
+        display: block
+        +arr(40, 90, $color-accent, l)
+    &--right
+      &::after
+        content: ''
+        position: absolute
+        z-index: 20
+        transform: translateY(-50%)
+        top: 50%
+        right: -3rem
+        display: block
+        +arr(40, 90, $color-accent, r)
+    p
+      font-size: 1.6rem
+      font-family: 'opens', sans-serif
+      line-height: 3rem
+
+
+  &__title
+    font-size: 2.4rem
+    text-transform: uppercase
+    letter-spacing: 1.2px
+    line-height: 2.4
+    &::after
+      content: ''
+      display: block
+      height: 4px
+      width: 44px
+      background: #fff
+      margin-bottom: 1.5rem
+  &__cat
+    font-family: 'opens', sans-serif
+    letter-spacing: 0.7px
+    line-height: 1
+    margin-bottom: -2rem

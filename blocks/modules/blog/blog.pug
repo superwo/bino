@@ -1,0 +1,32 @@
+section.section-blog
+  .container
+    h2.secondary-title OUR BLOG
+    span.title-descr Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.
+    hr.delimiter.delimiter--dark
+
+  .posts
+    -for(var i = 1; i<=4; i++)
+      .posts__item
+        .posts__item-inner
+        .posts__item-content
+          -if(i%2!=0)
+            img(src="img/blog/post" + i +".jpg").posts__img
+          -else
+            .posts__text.posts__text--left
+              span.posts__cat art / t-shirt
+              span.posts__title T-Shirt Design
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+              a(href="#").posts__more Read More &gg;
+              
+    -for(var i = 5; i<=8; i++)
+      .posts__item
+        .posts__item-inner
+        .posts__item-content
+          -if(i%2==0)
+            img(src="img/blog/post" + (i - 1) +".jpg").posts__img
+          -else
+            .posts__text.posts__text--right
+              span.posts__cat art / t-shirt
+              span.posts__title T-Shirt Design
+              p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.
+              a(href="#").posts__more Read More &gg;

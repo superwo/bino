@@ -1,0 +1,43 @@
+.section-trial
+  background-image: linear-gradient(rgba(#000, 0.6), rgba(#000, 0.6)), url(../img/footerbg.jpg)
+  background-size: cover
+  padding-bottom: 13.5rem
+  padding-top: 15rem
+
+p.trial-text
+  font-size: 1.8rem
+  line-height: 3.6rem
+  color: #fff
+  font-family: 'opens', sans-serif
+  margin-bottom: 6rem
+  span
+    display: block
+    font-size: 3.6rem
+    margin-bottom: 0.6rem
+
+.mainfooter
+  padding: 3.5rem 0
+  background-color: #202020
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.socials
+  display: flex
+
+  &__item:not(:last-child)
+    margin-right: 2rem
+  &__link
+    display: flex
+    +size(2rem  )
+    transition: all 200ms ease-in-out
+    &:hover
+      svg
+        fill: $color-accent
+    svg
+      fill: $color-text
+
+.copyright
+  font-family: 'opens-semibold', sans-serif
+  margin: 0

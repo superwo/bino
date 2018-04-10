@@ -1,2 +1,14 @@
+section.section-trial
+  .container.u-center-text
+    p.trial-text <span>Let's Get Started Now. <b>It's FREE!</b></span> 30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel anytime. No catches.
+    a(href="#").btn.btn--big.btn--rounded Start free trial
 footer.mainfooter
-  p footer
+  .container
+    .mainfooter__content
+      ul.socials
+        each val in ['f', 'g', 'l', 'o', 'r', 's', 't', 'v']
+          li.socials__item
+            a(href="#").socials__link
+              +icon(val)
+              
+      p.copyright Kazi Erfan &copy; All Rights Reserved 

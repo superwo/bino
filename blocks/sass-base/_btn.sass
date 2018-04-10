@@ -3,6 +3,7 @@
   vertical-align: middle
   text-align: center
   text-transform: uppercase
+  outline: none
   color: #fff
   padding: 1rem 0
   font-family: 'opens-semibold', sans-serif
@@ -15,6 +16,9 @@
   border: 1px solid $color-accent
   cursor: pointer
   backface-visibility:hidden
+
+  &--rounded
+    border-radius: 3px
 
   &:hover
     transform: translateY(-3px)
@@ -36,8 +40,8 @@
     background-color: #999
     border: none
 
-input[type="submit"].btn, button.btn
-  padding-top: 0
+// input[type="submit"].btn, button.btn
+//   padding-top: 0
 
 .circle-btn
   display: flex

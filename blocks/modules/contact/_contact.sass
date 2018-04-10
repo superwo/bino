@@ -1,0 +1,63 @@
+.section-contact
+  background-color: $color-white
+
+.contacts
+
+  &__item
+    font-size: 1.8rem
+    font-family: 'opens', sans-serif
+    margin-bottom: 6rem
+    line-height: 1.4
+    &:last-child
+      margin-bottom: 4.5rem
+    span
+      display: block
+
+  &__title
+    text-transform: uppercase
+    font-size: 2.4rem
+    color: $color-accent
+    font-family: 'sanspro', sans-serif
+    font-weight: bold
+    margin-bottom: 2rem
+
+  a
+    color: inherit
+    display: block
+    &:hover
+      color: inherit
+      text-decoration: underline
+
+.contact-form
+  margin-top: -1rem
+  margin-bottom: 1.5rem
+  &__control
+    position: relative
+
+    label
+      position: absolute
+      top: 2rem
+      left: 0
+      transition: transform 200ms ease-in-out
+
+  &__input
+    border: none
+    position: relative
+    z-index: 10
+    background-color: transparent
+    border-bottom: 1px solid rgba($color-text, .25)
+    padding-bottom: 2rem
+    padding-top: 2rem
+    outline: none
+    width: 100%
+    color: #555
+    font-size: 1.6rem
+    &:focus,
+    &:not(:placeholder-shown)
+      + label
+        transform: translateY(-2.5rem)
+
+  textarea
+    height: 14rem
+    margin-bottom: 3rem
+    resize: none

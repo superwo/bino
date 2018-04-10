@@ -1,0 +1,38 @@
+section.section-contact
+  .container.u-center-text
+    h2.secondary-title kEEP IN TOUCH
+    span.title-descr Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipt, dicturm quam mec.
+    hr.delimiter.delimiter--dark
+      
+  .container
+    .row
+      .col-sm-5
+        .case.case--rounded
+          ul.contacts
+            li.contacts__item
+              span.contacts__title Our Address
+              span.contacts__text House #13, Streat road, Sydney 2310 Australia
+            li.contacts__item
+              span.contacts__title Call Us
+              a(href="#").contacts__text + 880 168 109 1425
+              a(href="#").contacts__text + 0216809142
+            li.contacts__item
+              span.contacts__title Email Us
+              a(href="#").contacts__text contactus@email.com
+      .col-sm-7
+        .case.case--rounded
+          form(action="#").contact-form
+            .contact-form__control
+              input(type="text", name="name", placeholder=" ").contact-form__input
+              label(for="name") Name
+            .contact-form__control
+              input(type="email", name="email", placeholder=" ").contact-form__input
+              label(for="email") Email
+            .contact-form__control
+              input(type="text", name="subject", placeholder=" ").contact-form__input
+              label(for="subject") Subject
+            .contact-form__control
+              textarea(name="message", placeholder=" ").contact-form__input
+              label(for="message") Message
+              
+            button(type="submit").btn.btn--medium.btn--rounded Submit Message

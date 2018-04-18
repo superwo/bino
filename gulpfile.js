@@ -34,7 +34,7 @@ gulp.task('common-js', function() {
 		paths.devDir + 'js/common.js',
 		])
 	.pipe(concat('common.min.js'))
-	.pipe(uglify())
+	// .pipe(uglify())
 	.pipe(gulp.dest(paths.devDir + 'js'));
 });
 

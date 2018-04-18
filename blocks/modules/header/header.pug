@@ -1,34 +1,38 @@
 header.mainheader
   .top-line
     .container
-      .row
-        .top-line__inner
-          a(href="#").logo
-            img(src="img/logo.png").logo__img
-          nav.top-nav
-            ul.top-nav__list
-              li.top-nav__item
-                a(href="#").top-nav__link Home
-              li.top-nav__item
-                a(href="#").top-nav__link About Us
-              li.top-nav__item
-                a(href="#").top-nav__link Portfolio
-              li.top-nav__item
-                a(href="#").top-nav__link Pricing
-              li.top-nav__item
-                a(href="#").top-nav__link Team
-              li.top-nav__item
-                a(href="#").top-nav__link Blog
-              li.top-nav__item
-                a(href="#").top-nav__link Contact
+      .top-line__inner
+        a(href="#").logo
+          img(src="img/logo.png").logo__img
+        nav.top-nav
+          button.btn-toggle(id="menu-toggle")
+            .line
+            .line
+            .line
+          ul.top-nav__list
+            li.top-nav__item
+              a(href="#").top-nav__link Home
+            li.top-nav__item
+              a(href="#").top-nav__link About Us
+            li.top-nav__item
+              a(href="#").top-nav__link Portfolio
+            li.top-nav__item
+              a(href="#").top-nav__link Pricing
+            li.top-nav__item
+              a(href="#").top-nav__link Team
+            li.top-nav__item
+              a(href="#").top-nav__link Blog
+            li.top-nav__item
+              a(href="#").top-nav__link Contact
   .banner
-    span.banner__subtitle Our Clients Are Our First Priority
-    h1.main-title WELCOME TO BINO
-    hr.delimiter
-    p.banner__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-    .banner__buttons
-      a(href="#").btn.btn--big GET STARTED NOW
-      a(href="#").btn.btn--big.btn--transparent Learn More
+    .container
+      span.banner__subtitle Our Clients Are Our First Priority
+      h1.main-title WELCOME TO BINO
+      hr.delimiter
+      p.banner__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      .banner__buttons
+        a(href="#").btn.btn--big GET STARTED NOW
+        a(href="#").btn.btn--big.btn--transparent Learn More
 
 
       
@@ -38,7 +42,7 @@ section.why
   .container
     .row
       each val, index in {1:'Sleek Design', 2:'CLEAN CODE', 3:'CREATIVE IDEAS', 4:'FREE SUPPORT'}
-        .col-md-3.col-xs-6
+        .col-md-3.col-sm-6.col-xs-12
           .why-box
             .why-box__icon
               i(class="why-box__icon-" + index)

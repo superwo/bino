@@ -12,6 +12,12 @@ body
 	color: $color-white
 	line-height: 1
 	margin: 2.5rem auto 4.5rem
+	+laptop-max
+		font-size: 6rem
+	+tablets-max
+		font-size: 4rem
+	+phones-max
+		letter-spacing: 5px
 
 .secondary-title
 	position: relative
@@ -37,6 +43,9 @@ body
 			left: 0
 	&--right
 		padding-right: 3.4rem
+		+phones-max
+			padding-right: 0
+			padding-left: 2rem
 		&::after
 			content: ''
 			position: absolute
@@ -45,6 +54,8 @@ body
 			background-color: $color-accent
 			top: 2px
 			right: 0
+			+phones-max
+				display: none
 	&--white
 		color: $color-white
 

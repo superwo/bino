@@ -32,6 +32,10 @@ html
 	box-sizing: border-box
 	font-size: 62.5%
   // This defines what 1rem is
+	+desktop-max
+		font-size: 60%
+	+laptop-max
+		font-size: 58%
 
 html, body
 	height: 100%
@@ -41,6 +45,7 @@ body
   position: relative
   overflow-x: hidden
   opacity: 1
+
 
 a:link, a:visited
 	text-decoration: none
@@ -53,6 +58,8 @@ p
 
 section
 	padding: 14rem 0 6.5rem
+	+laptop-max
+		padding-top: 10rem
 
 // utility classes
 

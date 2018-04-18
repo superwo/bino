@@ -3,6 +3,8 @@
   position: relative
   padding: 0
   text-align: right
+  +laptop-max
+    text-align: left
 
   div[class^="col-"]
     background-color: #202020
@@ -10,6 +12,8 @@
     padding-top: 15rem
     padding-right: 8rem
     padding-bottom: 10rem
+    +laptop-max
+      padding: 6.5rem 3rem
 
   &::after
     position: absolute
@@ -20,6 +24,8 @@
     left: 50%
     background-image: url(../img/tablet.jpg)
     background-size: cover
+    +laptop-max
+      display: none
 
 .services
   &__item
@@ -35,11 +41,20 @@
     position: absolute
     top: 1rem
     right: -11.5rem
+    +laptop-max
+      left: 0
+      right: auto
   &__title
     color: $color-accent
     font-family: "opens-bold", sans-serif
     font-size: 1.8rem
     text-transform: uppercase
+
+  &__text
+    margin-left: 12rem
+
   p
     max-width: 56rem
     margin-left: auto
+    +laptop-max
+      margin-left: 0

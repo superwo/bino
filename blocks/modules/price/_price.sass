@@ -5,6 +5,9 @@
 .price-container
   display: flex
   margin-top: 6.7rem
+  +tablets-max
+    flex-direction: column
+    align-items: center
 
 .price-box
   display: flex
@@ -15,6 +18,10 @@
   background-color: $color-white
   height: 61rem
   padding: 0 0 5rem
+  +tablets-max
+    width: 50rem
+  +phones-max
+    width: 30rem
   &:hover, &:nth-child(2)
     .price-box__type
       background-color: $color-accent
@@ -32,6 +39,9 @@
       animation-timing-function: ease-in-out
   &:not(:last-child)
     margin-right: 1.5rem
+    +tablets-max
+      margin-right: 0
+      margin-bottom: 3rem
 
   &__type
     height: 20.5rem

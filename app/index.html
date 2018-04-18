@@ -26,28 +26,33 @@
       <header class="mainheader">
         <div class="top-line">
           <div class="container">
-            <div class="row">
-              <div class="top-line__inner"><a class="logo" href="#"><img class="logo__img" src="img/logo.png"></a>
-                <nav class="top-nav">
-                  <ul class="top-nav__list">
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Home</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">About Us</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Portfolio</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Pricing</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Team</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Blog</a></li>
-                    <li class="top-nav__item"><a class="top-nav__link" href="#">Contact</a></li>
-                  </ul>
-                </nav>
-              </div>
+            <div class="top-line__inner"><a class="logo" href="#"><img class="logo__img" src="img/logo.png"></a>
+              <nav class="top-nav">
+                <button class="btn-toggle" id="menu-toggle">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </button>
+                <ul class="top-nav__list">
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Home</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">About Us</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Portfolio</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Pricing</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Team</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Blog</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#">Contact</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
-        <div class="banner"><span class="banner__subtitle">Our Clients Are Our First Priority</span>
-          <h1 class="main-title">WELCOME TO BINO</h1>
-          <hr class="delimiter">
-          <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <div class="banner__buttons"><a class="btn btn--big" href="#">GET STARTED NOW</a><a class="btn btn--big btn--transparent" href="#">Learn More</a></div>
+        <div class="banner">
+          <div class="container"><span class="banner__subtitle">Our Clients Are Our First Priority</span>
+            <h1 class="main-title">WELCOME TO BINO</h1>
+            <hr class="delimiter">
+            <p class="banner__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="banner__buttons"><a class="btn btn--big" href="#">GET STARTED NOW</a><a class="btn btn--big btn--transparent" href="#">Learn More</a></div>
+          </div>
         </div>
       </header>
       <section class="why"><a class="circle-btn circle-btn--more" href="#">
@@ -56,25 +61,25 @@
           </svg></a>
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="why-box">
                 <div class="why-box__icon"><i class="why-box__icon-1"></i></div><span class="why-box__title">Sleek Design</span>
                 <p class="why-box__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="why-box">
                 <div class="why-box__icon"><i class="why-box__icon-2"></i></div><span class="why-box__title">CLEAN CODE</span>
                 <p class="why-box__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="why-box">
                 <div class="why-box__icon"><i class="why-box__icon-3"></i></div><span class="why-box__title">CREATIVE IDEAS</span>
                 <p class="why-box__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
               </div>
             </div>
-            <div class="col-md-3 col-xs-6">
+            <div class="col-md-3 col-sm-6 col-xs-12">
               <div class="why-box">
                 <div class="why-box__icon"><i class="why-box__icon-4"></i></div><span class="why-box__title">FREE SUPPORT</span>
                 <p class="why-box__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry.</p>
@@ -99,7 +104,7 @@
         <section class="section-services">
           <div class="container">
             <div class="row">
-              <div class="col-md-7">
+              <div class="col-md-7 col-sm-12">
                 <h2 class="secondary-title secondary-title--right secondary-title--white">Our Services</h2>
                 <ul class="services">
                   <li class="services__item">
@@ -195,7 +200,7 @@
           <hr class="delimiter delimiter--dark">
           <div class="container">
             <div class="row">
-              <div class="col-sm-7">
+              <div class="col-sm-7 col-xs-12">
                 <div class="case">
                   <div class="case__carousel">
                     <div class="case__carousel-item"><span class="case__icon"><i></i></span>
@@ -206,7 +211,7 @@
                   </div>
                 </div>
               </div>
-              <div class="case__carousel-photos"><img src="img/carousel/carousel1.png"></div>
+              <div class="case__carousel-photos hidden-xs"><img src="img/carousel/carousel1.png"></div>
             </div>
           </div>
         </section>
@@ -278,7 +283,7 @@
         <section class="section-team">
           <h2 class="secondary-title secondary-title--white">Our Team</h2><span class="title-descr title-descr--white">Meet the craziest team. Share your thoughts with them.</span>
           <hr class="delimiter">
-          <div class="team"><img class="team__curve" src="img/curve.svg">
+          <div class="team">
             <div class="container">
               <div class="row">
                 <ul class="team__list">

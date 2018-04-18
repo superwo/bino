@@ -11,17 +11,24 @@
 
 .categories
   display: flex
+  flex-wrap: wrap
   justify-content: center
   &__item
     font-family: 'opens', sans-serif
     text-transform: uppercase
     position: relative
+    +tablets-max
+      font-size: 1.4rem
   &__item:not(:last-child)
     margin-right: 4rem
+    +tablets-max
+      margin-right: 2rem
     &::after
       content: '/'
       position: relative
       left: 2rem
+      +tablets-max
+        display: none
   &__link
     color: $color-text
     transition: color 200ms ease
@@ -34,6 +41,10 @@
   &__item
     width: 25%
     position: relative
+    +tablets-max
+      width: 50%
+    +phones-max
+      width: 100%
     &-inner
       padding-top: 100%
     &-content

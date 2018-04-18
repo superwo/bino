@@ -2,23 +2,35 @@
   background-image: linear-gradient(rgba(#000, .5)), url(../img/stats.jpg)
   background-size: cover
   padding: 15.5rem 0 14rem
+  +phones-max
+    padding: 10rem 0
 
 .stats
   display: flex
   justify-content: space-between
   color: $color-white
   text-align: center
+  +phones-max
+    flex-direction: column
+
+  &__item:not(:last-child)
+    +phones-max
+      margin-bottom: 5rem
 
   &__nr
     display: block
     font-size: 3rem
     font-weight: bold
     letter-spacing: 1.5px
+    +laptop-max
+      font-size: 2rem
   &__text
     display: block
     line-height: 1
     letter-spacing: 0.9px
     font-size: 1.8rem
+    +laptop-max
+      font-size: 1.5rem
 
   &__icon
     +size(11rem)
@@ -30,6 +42,10 @@
     display: flex
     justify-content: center
     align-items: center
+    +tablets-max
+      +size(10rem)
+    +phones-max
+      margin-bottom: 1rem
     i
       display: block
     &-heart

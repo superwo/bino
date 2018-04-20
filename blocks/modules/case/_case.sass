@@ -12,9 +12,11 @@
   margin-top: 11rem
   position: relative
   z-index: 10
-  padding: 9.6rem 6rem 5rem
+  padding: 5rem 6rem
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
   background-color: #ffffff
+  &__carousel-item
+    padding-top: 4rem
   &--rounded
     border-radius: 4px
 
@@ -41,10 +43,11 @@
     display: flex
     justify-content: center
     margin-top: 5rem
-    a:not(:last-child)
+    span:not(:last-child)
       margin-right: 8px
-    a
+    span
       display: block
+      cursor: pointer
       background-color: $color-white
       +size(12px)
       border-radius: 50%

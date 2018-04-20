@@ -1,23 +1,72 @@
-section.section-works
+section.section-works#portfolio
   .container
     h2.secondary-title Recent works
     span.title-descr It has survived not only five centuries, but also the leap scrambled it to make a type.
     hr.delimiter.delimiter--dark
     ul.categories
       each val in ['all', 'Print Design', 'animation', 'art', 'web design', 'Photography', 'video']
+        -var id = val.split(' ').join('').toLowerCase()
         li.categories__item
           -if(val == 'all')
-            a(href="#").categories__link.categories__link--active= val
+            button(id= id).categories__link.categories__link--active= val
           -else
-            a(href="#").categories__link= val
+            button(id= id).categories__link= val
             
           
   .works
-    -for(var i = 1; i<=8; i++)
-      .works__item
-        .works__item-inner
-        .works__item-content
-          img(src="img/works/work" + i +".jpg").works__img
-          a(href="#").works__text
-            span.works__title T-Shirt Design
-            span.works__cat art / t-shirt
+    .works__item.animation.webdesign
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work1.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.photography.art
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work2.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.video
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work3.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.printdesign.animation
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work4.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.webdesign
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work5.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.video
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work6.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.printdesign.art
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work7.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt
+    .works__item.video
+      .works__item-inner
+      .works__item-content
+        img(src="img/works/work8.jpg").works__img
+        a(href="#").works__text
+          span.works__title T-Shirt Design
+          span.works__cat art / t-shirt

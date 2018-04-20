@@ -6,17 +6,18 @@ section.section-case
     .row
       .col-sm-7.col-xs-12
         .case
-          .case__carousel
-            .case__carousel-item
-              span.case__icon
-                i
-              h4.case__title <span>aCCUMULATE</span> CREATIVE IDEAS
-              p.case__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
-              a(href="#").btn.btn--medium Read More
-              .case__pag
-                a(href="#").active
-                a(href="#")
-                a(href="#")
+          .case__carousel.owl-carousel
+            each val in [1, 2, 3]
+              .case__carousel-item
+                span.case__icon
+                  i
+                h4.case__title <span>aCCUMULATE</span> CREATIVE IDEAS
+                p.case__text Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.
+                a(href="#").btn.btn--medium Read More
+          .case__pag
+            span.owl-dot
+            span.owl-dot
+            span.owl-dot
 
       .case__carousel-photos.hidden-xs
         img(src="img/carousel/carousel1.png")

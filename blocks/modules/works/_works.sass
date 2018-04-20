@@ -14,8 +14,6 @@
   flex-wrap: wrap
   justify-content: center
   &__item
-    font-family: 'opens', sans-serif
-    text-transform: uppercase
     position: relative
     +tablets-max
       font-size: 1.4rem
@@ -31,6 +29,11 @@
         display: none
   &__link
     color: $color-text
+    font-family: 'opens', sans-serif
+    text-transform: uppercase
+    background: none
+    border: none
+    outline: none
     transition: color 200ms ease
     &:hover, &:focus, &--active
       color: $color-accent

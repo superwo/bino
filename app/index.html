@@ -34,13 +34,13 @@
                   <div class="line"></div>
                 </button>
                 <ul class="top-nav__list">
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">Home</a></li>
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">About Us</a></li>
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">Portfolio</a></li>
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">Pricing</a></li>
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">Team</a></li>
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">Blog</a></li>
-                  <li class="top-nav__item"><a class="top-nav__link" href="#">Contact</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="/">Home</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#about">About Us</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#portfolio">Portfolio</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#price">Pricing</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#team">Team</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#blog">Blog</a></li>
+                  <li class="top-nav__item"><a class="top-nav__link" href="#contact">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </header>
-      <section class="why"><a class="circle-btn circle-btn--more" href="#">
+      <section class="why"><a class="circle-btn circle-btn--more" href="#about">
           <svg class="icon icon-anchor ">
             <use xlink:href="img/svg/sprite.svg#anchor"></use>
           </svg></a>
@@ -89,7 +89,7 @@
         </div>
       </section>
       <main class="maincontent"> 
-        <section class="section-about">
+        <section class="section-about" id="about">
           <div class="container">
             <div class="row">
               <div class="col-md-6 hidden-sm hidden-xs"><img class="img-responsive" src="img/monitor.jpg" alt="Monitor"></div>
@@ -139,57 +139,64 @@
             </div>
           </div>
         </section>
-        <section class="section-works">
+        <section class="section-works" id="portfolio">
           <div class="container">
             <h2 class="secondary-title">Recent works</h2><span class="title-descr">It has survived not only five centuries, but also the leap scrambled it to make a type.</span>
             <hr class="delimiter delimiter--dark">
             <ul class="categories">
-              <li class="categories__item"><a class="categories__link categories__link--active" href="#">all</a>
+              <li class="categories__item">
+                <button class="categories__link categories__link--active" id="all">all</button>
               </li>
-              <li class="categories__item"><a class="categories__link" href="#">Print Design</a>
+              <li class="categories__item">
+                <button class="categories__link" id="printdesign">Print Design</button>
               </li>
-              <li class="categories__item"><a class="categories__link" href="#">animation</a>
+              <li class="categories__item">
+                <button class="categories__link" id="animation">animation</button>
               </li>
-              <li class="categories__item"><a class="categories__link" href="#">art</a>
+              <li class="categories__item">
+                <button class="categories__link" id="art">art</button>
               </li>
-              <li class="categories__item"><a class="categories__link" href="#">web design</a>
+              <li class="categories__item">
+                <button class="categories__link" id="webdesign">web design</button>
               </li>
-              <li class="categories__item"><a class="categories__link" href="#">Photography</a>
+              <li class="categories__item">
+                <button class="categories__link" id="photography">Photography</button>
               </li>
-              <li class="categories__item"><a class="categories__link" href="#">video</a>
+              <li class="categories__item">
+                <button class="categories__link" id="video">video</button>
               </li>
             </ul>
           </div>
           <div class="works">
-            <div class="works__item">
+            <div class="works__item animation webdesign">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work1.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item photography art">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work2.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item video">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work3.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item printdesign animation">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work4.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item webdesign">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work5.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item video">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work6.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item printdesign art">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work7.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
-            <div class="works__item">
+            <div class="works__item video">
               <div class="works__item-inner"></div>
               <div class="works__item-content"><img class="works__img" src="img/works/work8.jpg"><a class="works__text" href="#"><span class="works__title">T-Shirt Design</span><span class="works__cat">art / t-shirt</span></a></div>
             </div>
@@ -202,41 +209,49 @@
             <div class="row">
               <div class="col-sm-7 col-xs-12">
                 <div class="case">
-                  <div class="case__carousel">
+                  <div class="case__carousel owl-carousel">
                     <div class="case__carousel-item"><span class="case__icon"><i></i></span>
                       <h4 class="case__title"><span>aCCUMULATE</span> CREATIVE IDEAS</h4>
                       <p class="case__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.</p><a class="btn btn--medium" href="#">Read More</a>
-                      <div class="case__pag"><a class="active" href="#"></a><a href="#"></a><a href="#"></a></div>
+                    </div>
+                    <div class="case__carousel-item"><span class="case__icon"><i></i></span>
+                      <h4 class="case__title"><span>aCCUMULATE</span> CREATIVE IDEAS</h4>
+                      <p class="case__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.</p><a class="btn btn--medium" href="#">Read More</a>
+                    </div>
+                    <div class="case__carousel-item"><span class="case__icon"><i></i></span>
+                      <h4 class="case__title"><span>aCCUMULATE</span> CREATIVE IDEAS</h4>
+                      <p class="case__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry Printing and typelorem Ipsum has been the setting let.</p><a class="btn btn--medium" href="#">Read More</a>
                     </div>
                   </div>
+                  <div class="case__pag"><span class="owl-dot"></span><span class="owl-dot"></span><span class="owl-dot"></span></div>
                 </div>
               </div>
               <div class="case__carousel-photos hidden-xs"><img src="img/carousel/carousel1.png"></div>
             </div>
           </div>
         </section>
-        <section class="section-stats">
+        <section class="section-stats" id="stats">
           <div class="container">
             <ul class="stats">
               <li class="stats__item">
-                <div class="stats__icon"><i class="stats__icon-heart"></i></div><span class="stats__nr">3891</span><span class="stats__text">User Favourites</span>
+                <div class="stats__icon"><i class="stats__icon-heart"></i></div><span class="stats__nr"><span>3891</span></span><span class="stats__text">User Favourites</span>
               </li>
               <li class="stats__item">
-                <div class="stats__icon"><i class="stats__icon-label"></i></div><span class="stats__nr">285</span><span class="stats__text">Amazing Features</span>
+                <div class="stats__icon"><i class="stats__icon-label"></i></div><span class="stats__nr"><span>285</span></span><span class="stats__text">Amazing Features</span>
               </li>
               <li class="stats__item">
-                <div class="stats__icon"><i class="stats__icon-like"></i></div><span class="stats__nr">281K</span><span class="stats__text">Posts Last 24 Hours</span>
+                <div class="stats__icon"><i class="stats__icon-like"></i></div><span class="stats__nr"><span>281</span>K</span><span class="stats__text">Posts Last 24 Hours</span>
               </li>
               <li class="stats__item">
-                <div class="stats__icon"><i class="stats__icon-star"></i></div><span class="stats__nr">618</span><span class="stats__text">Total Posts</span>
+                <div class="stats__icon"><i class="stats__icon-star"></i></div><span class="stats__nr"><span>618</span></span><span class="stats__text">Total Posts</span>
               </li>
               <li class="stats__item">
-                <div class="stats__icon"><i class="stats__icon-flag"></i></div><span class="stats__nr">178</span><span class="stats__text">Campaigns</span>
+                <div class="stats__icon"><i class="stats__icon-flag"></i></div><span class="stats__nr"><span>178</span></span><span class="stats__text">Campaigns</span>
               </li>
             </ul>
           </div>
         </section>
-        <section class="section-price">
+        <section class="section-price" id="price">
           <div class="container">
             <h2 class="secondary-title">OUR PRICING</h2><span class="title-descr">A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.</span>
             <hr class="delimiter delimiter--dark">
@@ -280,7 +295,7 @@
             </div>
           </div>
         </section>
-        <section class="section-team">
+        <section class="section-team" id="team">
           <h2 class="secondary-title secondary-title--white">Our Team</h2><span class="title-descr title-descr--white">Meet the craziest team. Share your thoughts with them.</span>
           <hr class="delimiter">
           <div class="team">
@@ -332,7 +347,7 @@
             </div>
           </div>
         </section>
-        <section class="section-blog">
+        <section class="section-blog" id="blog">
           <div class="container">
             <h2 class="secondary-title">OUR BLOG</h2><span class="title-descr">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</span>
             <hr class="delimiter delimiter--dark">
@@ -392,7 +407,7 @@
             </div>
           </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
           <div class="container u-center-text">
             <h2 class="secondary-title">kEEP IN TOUCH</h2><span class="title-descr">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipt, dicturm quam mec.</span>
             <hr class="delimiter delimiter--dark">

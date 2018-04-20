@@ -10,6 +10,25 @@
   &__item
     width: 25%
     position: relative
+    @for $i from 1 through 8
+      &--#{$i}
+        order: $i
+    +laptop-max
+      width: 50%
+      &--4
+        order: 2
+      &--5
+        order: 7
+    +phones-max
+      width: 100%
+      &--4
+        order: 4
+      &--5
+        order: 5
+      &--6
+        order: 4
+      &--8
+        order: 6
     &-inner
       padding-top: 100%
     &-content
@@ -44,6 +63,16 @@
     padding: 5rem
     +coverdiv
     background-color: $color-accent
+    &::before
+      +phones-max
+        content: ''
+        position: absolute
+        z-index: 20
+        transform: translateX(-50%)
+        top: -3rem
+        left: 50%
+        display: block !important
+        +arr(90, 40, $color-accent, t)
     &--left
       &::before
         content: ''
@@ -54,6 +83,8 @@
         left: -3rem
         display: block
         +arr(40, 90, $color-accent, l)
+        +laptop-max
+          display: none
     &--right
       &::after
         content: ''
@@ -64,10 +95,22 @@
         right: -3rem
         display: block
         +arr(40, 90, $color-accent, r)
+        +laptop-max
+          display: none
     p
       font-size: 1.6rem
       font-family: 'opens', sans-serif
       line-height: 3rem
+      // max-height: 70%
+      overflow: hidden
+      +desktop-max
+        display: none
+      +laptop-max
+        display: block
+      +tablets-max
+        display: none
+      +phones-max
+        display: block
 
 
   &__title
@@ -75,6 +118,9 @@
     text-transform: uppercase
     letter-spacing: 1.2px
     line-height: 2.4
+    +desktop-max
+      font-size: 2rem
+      line-height: 2
     &::after
       content: ''
       display: block
@@ -86,4 +132,4 @@
     font-family: 'opens', sans-serif
     letter-spacing: 0.7px
     line-height: 1
-    margin-bottom: -2rem
+    // margin-bottom: -2rem

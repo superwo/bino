@@ -22,9 +22,15 @@ p.trial-text
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
+    +tablets-max
+      justify-content: center
 
 .socials
   display: flex
+  margin-right: 3rem
+  +tablets-max
+    margin-bottom: 2rem
 
   &__item:not(:last-child)
     margin-right: 2rem
@@ -41,3 +47,5 @@ p.trial-text
 .copyright
   font-family: 'opens-semibold', sans-serif
   margin: 0
+  +tablets-max
+    margin-bottom: 2rem

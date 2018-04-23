@@ -44,6 +44,7 @@ gulp.task('js', ['common-js'], function() {
 		paths.devDir + 'libs/owl/owl.carousel.min.js',
 		paths.devDir + 'libs/jquery.animateNumber.min.js',
 		paths.devDir + 'libs/waypoints/lib/noframework.waypoints.min.js',
+		paths.devDir + 'libs/lazysizes/lazysizes.min.js',
 		paths.devDir + 'js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

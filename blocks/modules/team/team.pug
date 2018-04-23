@@ -1,4 +1,4 @@
-section.section-team#team
+section.section-team.lazyload#team
   h2.secondary-title.secondary-title--white Our Team
   span.title-descr.title-descr--white Meet the craziest team. Share your thoughts with them.
   hr.delimiter
@@ -9,7 +9,7 @@ section.section-team#team
           each val in [1, 2, 3, 4, 5]
             li(class="team__item team__item--" + val)
               div(class="team__item-front")
-                img(src="img/team/team"+val+".jpg").team__img
+                img(data-src="img/team/team"+val+".jpg").team__img.lazyload
               .team__item-content
                 span.team__name Kazi Erfan
                 span.team__title UI/UX Designer

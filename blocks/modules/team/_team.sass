@@ -1,9 +1,10 @@
 .section-team
   padding-bottom: 0
   text-align: center
-  background-image: linear-gradient(rgba(#202020, .75)), url(../img/phone.png)
   background-size: cover
   position: relative
+  &.lazyloaded
+    background-image: linear-gradient(rgba(#202020, .75)), url(../img/phone.png)
   .title-descr
     color: $color-white
 

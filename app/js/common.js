@@ -6,6 +6,7 @@ $(function() {
 	const navLinks = $('.top-nav__link').not(':first');
 	const btnMore = $('.circle-btn--more');
 	const catBtn = $('.categories__link');
+	const itemsToReveal = $('.why-box');
 
 	// Toggle Menu Button
 	const cls = { open: "open", close: "close" };
@@ -80,6 +81,10 @@ $(function() {
 	  $(".owl-carousel").trigger('to.owl.carousel', [$(this).index(), 300]);
 	});
 
+	// Revealing items on scrolling to
+	itemsToReveal.addClass('reveal-item');
+	revealOnScroll(itemsToReveal, '55%');
+
 });
 
 // animate numbers
@@ -91,13 +96,27 @@ const animateNumbers = function() {
 	});
 };
 
-const waypoint = new Waypoint({
+const waypointNumb = new Waypoint({
   element: document.getElementById('stats'),
   handler: function(direction) {
 		if(direction === 'down') {
 			animateNumbers();
-			waypoint.destroy();
+			waypointNumb.destroy();
 		}
   },
 	offset: 'bottom-in-view'
 })
+
+// function for revealing items
+function revealOnScroll(els, offset) {
+	els.each(function() {
+		const currentItem = this;
+		new Waypoint({
+			element: currentItem,
+			handler: function() {
+				$(currentItem).addClass('reveal-item--is-visible');
+			},
+			offset: offset
+		});
+	});
+};

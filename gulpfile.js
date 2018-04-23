@@ -108,7 +108,11 @@ gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 
 gulp.task('imagemin', function() {
 	return gulp.src(['app/img/**/*', '!app/img/sprite/*'])
-	.pipe(cache(imagemin()))
+	.pipe(imagemin({
+		progressive: true,
+		interlaced: true,
+		multipass: true
+	}))
 	.pipe(gulp.dest('dist/img'));
 });
 
